@@ -65,7 +65,7 @@ const CompositesExample: React.FC = () => {
       1,
       40,
       40,
-      (x: any, y: any) => {
+      (x: number, y: number) => {
         console.log(x, y);
         return Bodies.rectangle(x, y, 50, 50, {
           render: {

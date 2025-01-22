@@ -27,7 +27,7 @@ const PauseRenderingExample = () => {
     // Add bodies to the world
     const ground = Matter.Bodies.rectangle(400, 590, 810, 20, { isStatic: true,label:"Circle Body" });
     const ball = Matter.Bodies.circle(400, 100, 40, { restitution: 0.8 });
-    Matter.World.add(engine.world,  ball);
+    Matter.World.add(engine.world, [ground, ball]);
 
     // Function to check if all bodies are at rest
     const areAllBodiesAtRest = () => {

@@ -11,7 +11,7 @@ import {
   Runner,
   World,
 } from "matter-js";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const CompositeExample: React.FC = () => {
   const engineRef = useRef(Engine.create());

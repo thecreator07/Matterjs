@@ -55,7 +55,7 @@ const BodyConstrains: React.FC = () => {
     });
 
     World.add(engine.world, mouseConstraint);
-    console.log(World.allBodies); // Listen for mouse clicks
+    console.log(selectedBodies); // Listen for mouse clicks
     Events.on(mouseConstraint, "", (event) => {
       const { mouse } = event.source;
       const clickedBodies = Composite.allBodies(engine.world).filter((body) => {
