@@ -180,7 +180,6 @@ const DetailedObjectDrawing = () => {
   // Clear the preview canvas
   const clearPreview = () => {
     const canvas = canvasRef.current;
-    const engine = engineRef.current;
 
     if (!canvas) return;
 
@@ -188,9 +187,13 @@ const DetailedObjectDrawing = () => {
     if (ctx) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
-    World.clear(engine.world, true); // Clear the physics world
-
   };
+  // const clearWorld = () => {
+  //   const engine = engineRef.current;
+  //   World.clear(engine.world, true);
+
+  //   Engine.clear(engine);
+  // };
 
   return (
     <div style={{ position: "relative" }}>
@@ -210,23 +213,25 @@ const DetailedObjectDrawing = () => {
         onMouseUp={handleMouseUp}
       />
       <div style={{ marginTop: 10 }}>
-        <button
+        {/* <button
           onClick={() => {
             clearPreview();
+            clearWorld();
             setVertices([]);
           }}
           style={{
+            zIndex: 2,
             padding: "10px 20px",
             background: "#dc3545",
             color: "white",
-            border: "none",
+            border: "solid blue 2px",
             borderRadius: "4px",
             cursor: "pointer",
             marginRight: "10px",
           }}
         >
           Clear
-        </button>
+        </button> */}
       </div>
     </div>
   );
