@@ -1,6 +1,7 @@
 "use client";
 import {
   Bodies,
+  Body,
   Composite,
   Constraint,
   Engine,
@@ -17,7 +18,7 @@ const BodyConstrains: React.FC = () => {
   const engineRef = useRef(Engine.create());
   const renderRef = useRef<Render | null>(null);
   const runnerRef = useRef(Runner.create());
-  const [selectedBodies, setSelectedBodies] = useState<any[]>([]); // Track selected bodies
+  const [selectedBodies, setSelectedBodies] = useState<Body[]>([]); // Track selected bodies
 
   useEffect(() => {
     const engine = engineRef.current;
