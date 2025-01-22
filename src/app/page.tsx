@@ -18,7 +18,7 @@ export default function Home() {
       {/* <PhysicsCanvas/> */}
       {/* <PauseRenderingExample/> */}
       {/* <DrawAndConvert/> */}
-      {/* <DetailedObjectDrawing/> */}
+      <DetailedObjectDrawing/>
       {/* <CreateGifWithGifJs/> */}
       {/* <PauseAndFastForward/> */}
       {/* <ApplyForceExample/> */}
