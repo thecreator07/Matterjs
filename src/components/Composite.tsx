@@ -4,7 +4,7 @@ import {
   Composite,
   Constraint,
   Engine,
-  Events,
+  // Events,
   Mouse,
   MouseConstraint,
   Render,
@@ -17,7 +17,7 @@ const CompositeExample: React.FC = () => {
   const engineRef = useRef(Engine.create());
   const renderRef = useRef<Render | null>(null);
   const runnerRef = useRef(Runner.create());
-  const [selectedBodies, setSelectedBodies] = useState<any[]>([]); // Track selected bodies
+  // const [selectedBodies, setSelectedBodies] = useState<any[]>([]); // Track selected bodies
 
   useEffect(() => {
     const engine = engineRef.current;

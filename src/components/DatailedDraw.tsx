@@ -12,8 +12,8 @@ import {
   Events,
   Mouse,
   MouseConstraint,
-  Contact,
-  Vertex,
+  // Contact,
+  // Vertex,
 } from "matter-js";
 import simplify from "simplify-js";
 

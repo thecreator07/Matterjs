@@ -5,14 +5,14 @@ import {
   Composites,
   Constraint,
   Engine,
-  Events,
+  // Events,
   Mouse,
   MouseConstraint,
   Render,
   Runner,
   World,
 } from "matter-js";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef} from "react";
 
 const CompositesExample: React.FC = () => {
   const engineRef = useRef(Engine.create());
@@ -36,9 +36,9 @@ const CompositesExample: React.FC = () => {
 
     // Create ground and boxes
     const ground = Bodies.rectangle(400, 580, 810, 60, { isStatic: true });
-    const boxA = Bodies.rectangle(300, 200, 80, 80);
-    const boxB = Bodies.rectangle(400, 200, 80, 80);
-    const boxC = Bodies.rectangle(500, 300, 80, 80);
+    // const boxA = Bodies.rectangle(300, 200, 80, 80);
+    // const boxB = Bodies.rectangle(400, 200, 80, 80);
+    // const boxC = Bodies.rectangle(500, 300, 80, 80);
 
     World.add(engine.world, [ground]);
 
