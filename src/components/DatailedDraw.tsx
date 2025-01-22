@@ -180,12 +180,16 @@ const DetailedObjectDrawing = () => {
   // Clear the preview canvas
   const clearPreview = () => {
     const canvas = canvasRef.current;
+    const engine = engineRef.current;
+
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
     if (ctx) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
+    World.clear(engine.world, true); // Clear the physics world
+
   };
 
   return (
